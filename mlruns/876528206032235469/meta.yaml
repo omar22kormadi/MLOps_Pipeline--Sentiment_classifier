@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/876528206032235469
+creation_time: 1768147390310
+experiment_id: '876528206032235469'
+last_update_time: 1768147390310
+lifecycle_stage: active
+name: sentiment-goemotions

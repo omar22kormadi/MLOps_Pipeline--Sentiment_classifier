@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/876528206032235469/6a4c5398f4bf4564843f7b1c2a514800/artifacts
+end_time: 1768147403573
+entry_point_name: ''
+experiment_id: '876528206032235469'
+lifecycle_stage: active
+run_id: 6a4c5398f4bf4564843f7b1c2a514800
+run_name: baseline-tfidf-lr
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1768147390757
+status: 3
+tags: []
+user_id: amork

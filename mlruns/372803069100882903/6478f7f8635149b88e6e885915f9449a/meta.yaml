@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/372803069100882903/6478f7f8635149b88e6e885915f9449a/artifacts
+end_time: 1768147882540
+entry_point_name: ''
+experiment_id: '372803069100882903'
+lifecycle_stage: active
+run_id: 6478f7f8635149b88e6e885915f9449a
+run_name: optuna-trial-6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1768147882060
+status: 3
+tags: []
+user_id: amork
