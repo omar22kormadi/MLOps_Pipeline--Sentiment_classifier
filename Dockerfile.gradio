@@ -1,0 +1,19 @@
+# Dockerfile.gradio
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Install dependencies with compatible versions
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt && \
+    pip install --no-cache-dir gradio==4.44.0 huggingface-hub==0.24.0
+
+# Copy Gradio app and models
+COPY app_gradio.py .
+COPY models/ ./models/
+
+# Expose port
+EXPOSE 8000
+
+# Run Gradio app
+CMD ["python", "app_gradio.py"]
