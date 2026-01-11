@@ -1,11 +1,31 @@
+# docker-compose.yml
 version: '3.8'
 
 services:
-  sentiment-api:
+  # V1 Service (port 8001)
+  sentiment-api-v1:
     build: .
-    container_name: sentiment-classifier
+    image: sentiment-classifier:v1
+    container_name: sentiment-v1
     ports:
-      - "8000:8000"
+      - "8001:8000"
     environment:
+      - MODEL_VERSION=v1
       - PYTHONUNBUFFERED=1
+    volumes:
+      - ./models:/app/models:ro
+    restart: unless-stopped
+
+  # V2 Service (port 8002)
+  sentiment-api-v2:
+    build: .
+    image: sentiment-classifier:v2
+    container_name: sentiment-v2
+    ports:
+      - "8002:8000"
+    environment:
+      - MODEL_VERSION=v2
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./models:/app/models:ro
     restart: unless-stopped
