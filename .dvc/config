@@ -1,0 +1,8 @@
+[core]
+    remote = azure_storage
+['remote "azure_remote"']
+    url = azure://mystorage/sentiment-data
+    account_name = Amor KORMADI
+['remote "azure_storage"']
+    url = azure://sentiment-data
+    account_name = nlpclassifier
