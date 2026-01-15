@@ -302,5 +302,5 @@ Try sample sentences and inspect predicted emotions and confidence distribution.
 
 ## 👤 Author
 
-- **Name**: Omar Kormadi  
+- **Names**: Omar Kormadi and Khadija Ammar
 - **Project**: Mini-projet MLOps – Sentiment / Emotion Classifier
